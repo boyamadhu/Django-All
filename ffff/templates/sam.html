@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}"> -->
+</head>
+<body>
+    <center>
+        <h1 class="btn btn-primary">dont understimate the power of commom man</h1>
+        <table border="2px">
+            <tr>
+                <th>name</th>
+                <th>author</th>
+                <th>date</th>
+            </tr>
+        {% for i in display %}
+            <tr>
+                <td>{{ i.name }}</td>
+                <td>{{ i.author }}</td>
+                <td>{{ i.date }}</td>
+            </tr>
+        {% endfor %}
+        </table>
+    </center>
+
+    <!-- <script src="{% static 'js/mdb.min.js' %}"></script> -->
+</body>
+</html>

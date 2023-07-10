@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <form method="POST">
+            {% csrf_token %}
+            <h1>inserting into topic table</h1>
+            <label for="topic">Topic</label>
+            <input type="text" name="topic" id="topic" placeholder="Enter topic name">
+            <br>
+            <br>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter name">
+            <br>
+            <br>
+            <label for="url">Url</label>
+            <input type="text" name="url" id="url" placeholder="Enter url">
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </center>
+</body>
+</html>

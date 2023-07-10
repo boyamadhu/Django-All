@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <center>
+       
+        <h1>this is get form</h1>
+        <form method="POST">
+            {% csrf_token %}
+            <label for="un">Name</label>
+            <input type="text" name="un" id="un">
+            <br>
+            <br>
+            <label for="pw">Password</label>
+            <input type="password" name="pw" id="pw">
+            <br>
+            <br>
+            <input type="submit" value="submit">
+        </form>
+    </center>
+</body>
+</html>

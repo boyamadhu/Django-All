@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/mdb.min.css.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1 style="color: red;">ARJUN REDDY</h1>
+        <a class="btn btn-primary" href="{% url 'app2:sam' %}">go to the arjun REDDY</a>
+
+        <img src="{% static 'images/prime143.jpg' %}" alt="img not found">
+
+        
+
+        {% for k,v in d %}
+            <h2>{{ k }}</h2>
+        {% endfor %}
+    </center>
+
+
+
+   <script src="{% static 'js/mdb.min.js.js' %}"></script>
+</body>
+</html>

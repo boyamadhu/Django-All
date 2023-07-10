@@ -1,0 +1,5 @@
+body {
+    background-image: url('{% static "images/madhu.jpg" %}');
+    background-size: cover;
+    background-color: black;
+}

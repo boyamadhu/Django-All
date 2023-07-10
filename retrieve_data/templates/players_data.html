@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+    <table border="2px">
+        <tr>
+            <th>player_name</th>
+            <th>player_age</th>
+            <th>player_gender</th>
+        </tr>
+    {% for i in players %}
+        <tr>
+            <th>{{ i.pname }}</th>
+            <th>{{ i.page }}</th>
+            <th>{{ i.pgender }}</th>
+        </tr>
+    {% endfor %}
+    </table>
+</body>
+</html>

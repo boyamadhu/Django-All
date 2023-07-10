@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <table border="2px">
+        <tr>
+            <th>sport-name</th>
+            <th>person-name</th>
+        </tr>
+        {% for i in player %}
+            <tr>
+                <th>{{ i.sport_name }}</th>
+                <th>{{ i.pname }}</th>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
